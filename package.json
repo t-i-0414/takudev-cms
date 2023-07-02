@@ -12,14 +12,22 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/better-sqlite3": "7.6.4",
+    "@types/pg": "^8.10.2"
+  },
   "dependencies": {
-    "@strapi/strapi": "4.11.3",
-    "@strapi/plugin-users-permissions": "4.11.3",
+    "@strapi/plugin-graphql": "^4.11.3",
     "@strapi/plugin-i18n": "4.11.3",
-    "better-sqlite3": "8.0.1"
+    "@strapi/plugin-users-permissions": "4.11.3",
+    "@strapi/provider-upload-aws-s3": "^4.11.3",
+    "@strapi/strapi": "4.11.3",
+    "@strapi/typescript-utils": "^4.11.3",
+    "better-sqlite3": "8.4.0",
+    "pg": "^8.11.1",
+    "react-select": "^5.7.3"
   },
   "strapi": {
-    "uuid": "e043a6af-6b87-4208-93d5-b0b28acfdb3d"
+    "uuid": "715c0270-293b-45e1-81f4-9e2c99640036"
   }
 }
