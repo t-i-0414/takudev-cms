@@ -7,14 +7,10 @@
   "license": "UNLICENSED",
   "author": "t-i-0414 <gutlo.ol0414@gmail.com> (https://github.com/t-i-0414/)",
   "scripts": {
+    "build": "strapi build",
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
     "strapi": "strapi"
-  },
-  "devDependencies": {
-    "@types/better-sqlite3": "7.6.4",
-    "@types/pg": "^8.10.2"
   },
   "dependencies": {
     "@strapi/plugin-graphql": "^4.11.3",
@@ -27,7 +23,12 @@
     "pg": "^8.11.1",
     "react-select": "^5.7.3"
   },
+  "devDependencies": {
+    "@types/better-sqlite3": "7.6.4",
+    "@types/pg": "^8.10.2"
+  },
   "strapi": {
     "uuid": "715c0270-293b-45e1-81f4-9e2c99640036"
-  }
+  },
+  "packageManager": "yarn@3.6.1"
 }
