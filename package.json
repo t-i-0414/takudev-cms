@@ -9,8 +9,11 @@
   "scripts": {
     "build": "strapi build",
     "develop": "strapi develop",
+    "sort-package-json": "sort-package-json package.json",
     "start": "strapi start",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "type-check": "tsc --noEmit",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@strapi/plugin-graphql": "^4.11.3",
@@ -21,14 +24,17 @@
     "@strapi/typescript-utils": "^4.11.3",
     "better-sqlite3": "8.4.0",
     "pg": "^8.11.1",
-    "react-select": "^5.7.3"
+    "react-select": "^5.7.3",
+    "typescript": "^5.1.6"
   },
   "devDependencies": {
     "@types/better-sqlite3": "7.6.4",
-    "@types/pg": "^8.10.2"
+    "@types/pg": "^8.10.2",
+    "husky": "^8.0.3",
+    "sort-package-json": "^2.5.0"
   },
+  "packageManager": "yarn@3.6.1",
   "strapi": {
     "uuid": "715c0270-293b-45e1-81f4-9e2c99640036"
-  },
-  "packageManager": "yarn@3.6.1"
+  }
 }
