@@ -1,8 +1,7 @@
 export default ({ env }) => ({
   upload:
     process.env.NODE_ENV === "production"
-      ? {}
-      : {
+      ? {
           config: {
             provider: "aws-s3",
             providerOptions: {
@@ -15,5 +14,6 @@ export default ({ env }) => ({
               },
             },
           },
-        },
+        }
+      : {},
 });
