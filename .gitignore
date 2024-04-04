@@ -123,3 +123,6 @@ core.*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# strapi
+.strapi
